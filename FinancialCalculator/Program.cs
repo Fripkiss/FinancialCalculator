@@ -7,11 +7,14 @@ namespace FinancialCalculator
     class Program
     {
         private static readonly Dictionary<string, decimal> exchangeRates = new Dictionary<string, decimal>
-        {
-            {"USD_RUB", 90.0m},
-            {"EUR_RUB", 98.5m},
-            {"EUR_USD", 1.09m}
-        };
+            {
+               {"USD_RUB", 90.0m},
+               {"EUR_RUB", 98.5m},
+               {"EUR_USD", 1.9m},
+               {"RUB_USD", 1/90.0m},
+               {"RUB_EUR", 1/98.5m},
+               {"USD_EUR", 1/1.09m}
+            };
 
         static void Main(string[] args)
         {
